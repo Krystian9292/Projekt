@@ -1,0 +1,7 @@
+Django==4.2.5
+psycopg2-binary==2.9.6
+django-taggit==5.0.1
+Faker==4.1.0
+pytest==5.4.2
+pytest-django==3.9.0
+requests==2.28.2
