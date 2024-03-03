@@ -28,9 +28,10 @@ body {
     font-size: 12px;
     font-style: italic;
 }/* pagination */
-.pagination {
+.pagination a:hover {
     margin:40px 0;
     font-weight:bold;
+    color: #111;
 }/* forms */
 label {
     float:left;
