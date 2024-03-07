@@ -2,6 +2,7 @@ body {
     margin:0;
     padding:0;
     font-family:helvetica, sans-serif;
+    background-image: url("../images/z25882706Q,Ksiazka.giv");
 }a {
     color:#00abff;
     text-decoration:none;
@@ -18,7 +19,7 @@ body {
     width: 80%;
     margin: 20px auto;
     text-align: justify;
-    background-color: white;
+    /*background-color: white;*/
     padding: 20px;
     border-radius: 5px;
 
