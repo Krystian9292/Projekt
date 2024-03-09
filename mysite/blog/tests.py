@@ -1,6 +1,6 @@
 import pytest
 
-from blog.models import Post
+from blog.models import Post, Comment
 
 @pytest.mark.django_db
 def test_published_manager():
@@ -12,3 +12,24 @@ def test_published_manager():
 
     for post in published_posts:
         assert post.status == "published"
+
+@pytest.mark.django_db
+def test_comment_creation():
+    post_id = 1
+    name = "John Test"
+    email = "john@test.com"
+    body = "This is a test comment."
+    comment = Comment.objects.create(post_id=post_id, name=name, email=email, body=body)
+    assert isinstance(comment, Comment)
+
+@pytest.mark.django_db
+def test_comment_fields():
+    post_id = 1
+    name = "John Test"
+    email = "john@test.com"
+    body = "This is a test comment."
+    comment = Comment.objects.create(post_id=post_id, name=name, email=email, body=body)
+    assert comment.post_id == post_id
+    assert comment.name == name
+    assert comment.email == email
+    assert comment.body == body
