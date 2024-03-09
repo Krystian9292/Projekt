@@ -2,7 +2,7 @@ body {
     margin:0;
     padding:0;
     font-family:helvetica, sans-serif;
-    background-image: url("../images/z25882706Q,Ksiazka.giv");
+    /*background-image: url("../images/z25882706Q,Ksiazka.giv");*/
 }a {
     color:#00abff;
     text-decoration:none;
@@ -19,9 +19,11 @@ body {
     width: 80%;
     margin: 20px auto;
     text-align: justify;
-    /*background-color: white;*/
+    background-color: white;
     padding: 20px;
     border-radius: 5px;
+    z-index: 2;
+
 
 }p.date {
     color:#ccc;
@@ -30,7 +32,7 @@ body {
     font-style: italic;
 }/* pagination */
 .pagination a:hover {
-    margin:40px 0;
+    margin:20px 0;
     font-weight:bold;
     color: #111;
 }/* forms */
@@ -75,20 +77,20 @@ input[type=submit] {
     color:#666;
 }
 
-.sidenav {
+.container-fluid {
  height: 100%;
- width: 160px;
+ width: 720px;
  position: fixed;
  z-index: 1;
  top: 0;
  left: 0;
- background-color: #111;
+ /*background-color: #111;*/
  overflow-x: hidden;
- padding-top: 20px;
+ padding-top: 50px;
 }
 
-.sidenav a {
- padding: 6px 8px 6px 16px;
+.container-fluid a {
+ padding: 6px 12px 6px 8px;
  text-decoration: none;
  font-size: 25px;
  color: #00abff
@@ -96,7 +98,34 @@ input[type=submit] {
  display: block;
 }
 
-.sidenav a:hover {
- color: #F1F1F1
+.container-fluid a:hover {
+ color: #000000;
 ;
 }
+
+/*.sidenav {*/
+/* height: 100%;*/
+/* width: 160px;*/
+/* position: fixed;*/
+/* z-index: 1;*/
+/* top: 0;*/
+/* left: 0;*/
+/* !*background-color: #111;*!*/
+/* overflow-x: hidden;*/
+/* padding-top: 10px;*/
+/*}*/
+
+/*.sidenav a {*/
+/* padding: 6px 8px 6px 16px;*/
+/* text-decoration: none;*/
+/* font-size: 25px;*/
+/* color: #00abff*/
+/*;*/
+/* display: block;*/
+/*}*/
+
+/*.sidenav a:hover {*/
+/* color: #000000;*/
+/*;*/
+/*}*/
+
