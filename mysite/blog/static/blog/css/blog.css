@@ -78,7 +78,7 @@ input[type=submit] {
 .container-fluid {
  height: 100%;
  width: 100%;
- position: absolute;
+ position: fixed;
  z-index: 1;
  top: 0;
  left: 0;
@@ -96,9 +96,14 @@ input[type=submit] {
  color: #000000;
 ;
 }
-.offcanvas {
-    width: 300px;
+
+.nav-link{
+
 }
+
+
+
+/*Sprobowac zmienic siede bar, dodac zdjecie w tle*/
 
 /*.sidenav {*/
 /* height: 100%;*/
