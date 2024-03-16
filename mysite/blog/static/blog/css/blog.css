@@ -67,7 +67,8 @@ input[type=submit] {
     padding:10px;
 }
 .comment:nth-child(even) {
-    background:#efefef;
+    /*background:#efefef;*/
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0);
 }
 .comment .info {
     font-weight:bold;
@@ -90,12 +91,16 @@ input[type=submit] {
  padding: 6px 12px 6px 8px;
  text-decoration: none;
  color: #00abff;
+
 }
 
 .container-fluid a:hover {
  color: #000000;
 ;
 }
+
+
+
 
 
 /*Sprobowac zmienic siede bar, dodac zdjecie w tle*/
