@@ -1,116 +1,138 @@
 {% load i18n %}
 {% load static %}
-<!--<div class="sidebar border-dark text-bg-info p-3 mb-2 border-right col-md-3 col-lg-3 p-0 bg-body-tertiary">-->
-<!--    <div class="offcanvas-md offcanvas-end bg-body-tertiary" tabindex="-1" id="sidebarMenu"-->
-<!--         aria-labelledby="sidebarMenuLabel">-->
-<!--        <div class="offcanvas-header">-->
-<!--        </div>-->
-<!--        <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">-->
-<!--            <ul class="nav flex-column">-->
-<!--                        <li class="nav-item">-->
-<!--                            <a class="nav-link active" href="#">About</a>-->
-<!--                        </li>-->
-<!--                        <li class="nav-item">-->
-<!--                            <a class="nav-link" href="#">More info</a>-->
-<!--                        </li>-->
-<!--                        <li class="nav-item">-->
-<!--                            <a class="nav-link" href="#">Contact</a>-->
-<!--                        </li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-<div class="container-fluid d-flex h-100" >
-        <div id="Sidebar"
-             class="d-flex flex-column
-                    flex-shrink-0
-                    p-3 bg-success
-                    text-white offcanvas-md offcanvas-start">
-            <a href="#"
-               class="navbar-brand">
-            </a><hr>
-            <ul class="mynav nav nav-pills flex-column mb-auto">
-                <li class="nav-item mb-1">
-                    <a href="#">
-                        <i class="fa-regular fa-user"></i>
-                        Profile
-                    </a>
+<div class="sidebar border border-right col-md-2 col-lg-2 p-0 bg-success">
+    <div class="offcanvas-md offcanvas-end bg-success" tabindex="-1" id="sidebarMenu"
+         aria-labelledby="sidebarMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebarMenuLabel">Blog</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                    data-bs-target="#sidebarMenu" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-2 overflow-y-auto">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page"
+                       href="#">Profile</a>
                 </li>
-
-                <li class="nav-item mb-1">
-                    <a href="#">
-                        <i class="fa-regular fa-bookmark"></i>
-                        Saved Articles
-                        <span class="notification-badge">5</span>
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2"
+                       href="#">Saved Articles</a>
                 </li>
-                <li class="nav-item mb-1">
-                    <a href="#">
-                        <i class="fa-regular fa-newspaper"></i>
-                        Articles
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2"
+                       href="#">Articles</a>
                 </li>
-                <li class="nav-item mb-1">
-                    <a href="#">
-                        <i class="fa-solid fa-archway"></i>
-                        Institutions
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2"
+                       href="#">Organizations</a>
                 </li>
-                <li class="nav-item mb-1">
-                    <a href="#">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        Organizations
-                    </a>
-                </li>
-
-                <li class="sidebar-item  nav-item mb-1">
-                    <a href="#"
-                       class="sidebar-link collapsed"
-                       data-bs-toggle="collapse"
-                       data-bs-target="#settings"
-                       aria-expanded="false"
-                       aria-controls="settings">
-                        <i class="fas fa-cog pe-2"></i>
-
-                    </a>
-                    <ul id="settings"
-                        class="sidebar-dropdown list-unstyled collapse"
-                        data-bs-parent="#sidebar">
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">
-                                <i class="fas fa-sign-in-alt pe-2"></i>
-                                <span class="topic"> Login</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">
-                                <i class="fas fa-user-plus pe-2"></i>
-                                <span class="topic">Register</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">
-                                <i class="fas fa-sign-out-alt pe-2"></i>
-                                <span class="topic">Log Out</span>
-                            </a>
-                        </li>
-                    </ul>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2"
+                       href="#">Institutions</a>
                 </li>
             </ul>
-            <hr>
+            <hr class="my-3">
             <div class="d-flex">
-
-                <i class="fa-solid fa-book  me-2"></i>
+                <i class="fa-solid fa-book me-2"></i>
                 <span>
                     <h6 class="mt-1 mb-0">
-                        Everything with CodersLab
+                    Everything with CodersLab
                     </h6>
                 </span>
             </div>
         </div>
-
-
-
-
-        </div>
     </div>
+</div>
+
+{#<div class="container-fluid d-flex h-100">#}
+{#    <div id="Sidebar"#}
+{#         tabindex="-1"#}
+{#         class="d-flex flex-column#}
+{#                    flex-shrink-0#}
+{#                    p-3 bg-success#}
+{#                    text-white offcanvas-md offcanvas-start">#}
+{#        <a href="#"#}
+{#           class="navbar-brand">#}
+{#        </a>#}
+{#        <hr>#}
+{#        <ul class="mynav nav nav-pills flex-column mb-auto">#}
+{#            <li class="nav-item mb-1">#}
+{#                <a href="#">#}
+{#                    <i class="fa-regular fa-user"></i>#}
+{#                    Profile#}
+{#                </a>#}
+{#            </li>#}
+{##}
+{#            <li class="nav-item mb-1">#}
+{#                <a href="#">#}
+{#                    <i class="fa-regular fa-bookmark"></i>#}
+{#                    Saved Articles#}
+{#                    <span class="notification-badge">5</span>#}
+{#                </a>#}
+{#            </li>#}
+{#            <li class="nav-item mb-1">#}
+{#                <a href="#">#}
+{#                    <i class="fa-regular fa-newspaper"></i>#}
+{#                    Articles#}
+{#                </a>#}
+{#            </li>#}
+{#            <li class="nav-item mb-1">#}
+{#                <a href="#">#}
+{#                    <i class="fa-solid fa-archway"></i>#}
+{#                    Institutions#}
+{#                </a>#}
+{#            </li>#}
+{#            <li class="nav-item mb-1">#}
+{#                <a href="#">#}
+{#                    <i class="fa-solid fa-graduation-cap"></i>#}
+{#                    Organizations#}
+{#                </a>#}
+{#            </li>#}
+{##}
+{#            <li class="sidebar-item  nav-item mb-1">#}
+{#                <a href="#"#}
+{#                   class="sidebar-link collapsed"#}
+{#                   data-bs-toggle="collapse"#}
+{#                   data-bs-target="#settings"#}
+{#                   aria-expanded="false"#}
+{#                   aria-controls="settings">#}
+{#                    <i class="fas fa-cog pe-2"></i>#}
+{##}
+{#                </a>#}
+{#                <ul id="settings"#}
+{#                    class="sidebar-dropdown list-unstyled collapse"#}
+{#                    data-bs-parent="#sidebar">#}
+{#                    <li class="sidebar-item">#}
+{#                        <a href="#" class="sidebar-link">#}
+{#                            <i class="fas fa-sign-in-alt pe-2"></i>#}
+{#                            <span class="topic"> Login</span>#}
+{#                        </a>#}
+{#                    </li>#}
+{#                    <li class="sidebar-item">#}
+{#                        <a href="#" class="sidebar-link">#}
+{#                            <i class="fas fa-user-plus pe-2"></i>#}
+{#                            <span class="topic">Register</span>#}
+{#                        </a>#}
+{#                    </li>#}
+{#                    <li class="sidebar-item">#}
+{#                        <a href="#" class="sidebar-link">#}
+{#                            <i class="fas fa-sign-out-alt pe-2"></i>#}
+{#                            <span class="topic">Log Out</span>#}
+{#                        </a>#}
+{#                    </li>#}
+{#                </ul>#}
+{#            </li>#}
+{#        </ul>#}
+{#        <hr>#}
+{#        <div class="d-flex">#}
+{##}
+{#            <i class="fa-solid fa-book  me-2"></i>#}
+{#            <span>#}
+{#                    <h6 class="mt-1 mb-0">#}
+{#                        Everything with CodersLab#}
+{#                    </h6>#}
+{#                </span>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+

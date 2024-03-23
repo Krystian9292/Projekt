@@ -1,9 +1,8 @@
-{% load i18n %}
 {% load static %}
-<header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark">
+<header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow">
 
-    <a class="navbar-brand col-md-3 col-lg-3 me-0 px-3 fs-6 text-white" href="http://localhost:8000/blog/">
-        <img class="me-2" width="50" src="{% static 'blog/images/z25882706Q,Ksiazka.giv' %}"/> {% trans 'Krystian Lisowski Blog' %}
+    <a class="navbar-brand col-md-3 col-lg-3 me-0 px-3 fs-6 text-white" href="/blog">
+        <img class="me-2" width="50" src="{% static 'blog/images/z25882706Q,Ksiazka.giv' %}"/> Krystian Lisowski Blog
     </a>
 
     <ul class="navbar-nav flex-row d-md-none">
@@ -12,7 +11,7 @@
                     data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
                     aria-label="Toggle navigation">
                 <svg class="bi">
-                    <use xlink:href="#"/>
+                    <use xlink:href="#list"/>
                 </svg>
             </button>
         </li>
